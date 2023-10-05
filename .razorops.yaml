@@ -31,8 +31,6 @@ tasks:
     - reports/html: 
         dir: coverage
         index: index.html
-    - reports/junit:
-      - rspec.xml
 
     - run: docker logs sravanibikkina/my-rails-app11
       when: on_fail
