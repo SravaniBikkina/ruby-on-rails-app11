@@ -6,12 +6,7 @@ tasks:
         image: sravanibikkina/my-rails-app11
         tags: ["${CI_COMMIT_SHA:0:8}", "latest", "${CI_REPO_BRANCH}"]
 
-  rspec:
-    runner:
-      containers:
-      - image: sravanibikkina/my-rails-app11
-      options:
-        - --name= my-rails-app11
+
     steps:
     - checkout
     - cache/pull:
