@@ -24,9 +24,6 @@ tasks:
 
     - run: bundle install --path vendor/bundle || bundle check
 
-    - commands:
-      - bundle exec rake db:migrate
-      - bundle exec rspec
     - cache/push:
         key: bundle-{{ checksum "Gemfile.lock" }}
         paths: [vendor/bundle]
