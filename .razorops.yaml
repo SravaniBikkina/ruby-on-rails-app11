@@ -10,7 +10,7 @@ tasks:
     runner:
       containers:
       - image: razorci/ruby:3.0.2
-      - image: my-rails-app11
+      - image: sravanibikkina/my-rails-app11
       options:
         - --name=sqlite
     steps:
