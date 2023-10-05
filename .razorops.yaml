@@ -10,12 +10,8 @@ tasks:
     runner:
       containers:
       - image: razorci/ruby:3.0.2
-      - image: sqlite:3.37.2
-        environment:
-        - POSTGRES_DB=sample_test
-        - POSTGRES_USER=root
-        - POSTGRES_PASSWORD=sqlite
-        options:
+      - image: my-rails-app11
+      options:
         - --name=sqlite
     steps:
     - checkout
