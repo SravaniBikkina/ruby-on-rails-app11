@@ -9,10 +9,9 @@ tasks:
   rspec:
     runner:
       containers:
-      - image: razorci/ruby:3.0.2
       - image: sravanibikkina/my-rails-app11
       options:
-        - --name=sqlite
+        - --name= my-rails-app11
     steps:
     - checkout
     - cache/pull:
